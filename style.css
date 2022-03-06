@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primarycolor: #5c2e80;
+  --secondarycolor: #656d77;
+  --thirdtcolor: #434a54;
+}
+
+/* font */
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif; */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #4a4a4c;
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: #f5f7ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--secondarycolor);
+  font-weight: 600;
+  font-size: 1em;
+  border: 2px solid var(--secondarycolor);
+  padding: 12px 47px;
+}
+
+.btn:hover {
+  color: var(--primarycolor);
+  border: 2px solid var(--primarycolor);
+}
+
+.btn_buy {
+  border-radius: 53px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.body_container {
+  margin: 1em;
+  -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+}
+
+/* header begins */
+
+header {
+  padding: 15px 0;
+  background-color: #fff;
+}
+
+.top_header,
+.menu_list,
+.lang_menu_list {
+  display: flex;
+}
+
+.menu_list,
+.lang_menu_list {
+  list-style: none;
+}
+
+.top_header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+}
+
+.menu_link,
+.lang_menu_link {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primarycolor);
+  padding: 0px 20px;
+}
+
+.menu_item {
+  border-bottom: 3px solid transparent;
+  padding: 0.5em 0em;
+}
+
+.menu_item:hover {
+  border-bottom: 3px solid var(--primarycolor);
+}
+
+.lang {
+  position: relative;
+}
+
+.lang_menu_item {
+  border: 1px solid #e0e1e1;
+  padding: 0.5em 0em;
+  margin-left: 0.5em;
+}
+
+.lang_menu_list {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+}
+
+.lang_menu_link {
+  font-size: 15px;
+}
+
+.lang_menu_link img {
+  width: 20px;
+}
+
+.lang:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background-color: green;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.lang:hover .lang_menu_list .menu_item {
+  display: block;
+  position: absolute;
+  background-color: green;
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+/* header ends */
+
+/* section overlay */
+
+.section_overlay {
+  position: relative;
+  background-color: #4d1c70;
+
+  background-image: url("03.jpg");
+  padding: 5em 0;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  background-attachment: fixed;
+}
+
+.section_title {
+}
+
+#section_title {
+  text-align: center;
+  color: #fff;
+  z-index: 99;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  background-color: #5e3089;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* section Geschenk  */
+
+.section_geschenk {
+  background-color: #fff;
+  padding: 4em 0;
+}
+
+.geschenk_wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.card {
+  flex: 1;
+  text-align: center;
+}
+
+.text_small {
+  font-size: 13px;
+  color: var(--secondarycolor);
+}
+
+.card_title {
+  font-family: "Lora", serif;
+  font-size: 39px;
+  color: var(--primarycolor);
+  font-weight: 100;
+  text-align: center;
+}
+
+.text_big {
+  font-size: 17px;
+  columns: var(--secondarycolor);
+
+  font-weight: 300;
+}
+
+.card .btn {
+  display: inline-block;
+}
+
+.card2 > * {
+  margin-bottom: 20px;
+}
+
+/* section price */
+
+.section_price {
+  padding: 5em 0;
+}
+
+.price_card_wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+.price_card {
+  text-align: center;
+}
+
+.price_bottom {
+  box-shadow: 0 0px 8px 0 rgb(0 0 0 / 50%);
+}
+
+.price_title {
+  background-color: var(--primarycolor);
+  color: #fff;
+  padding: 2em 0;
+}
+
+.price_wrapper {
+  text-align: center;
+
+  position: relative;
+}
+
+.price_wrapper p {
+  font-size: 3em;
+  font-weight: 600;
+}
+.currency {
+  font-size: 1em;
+  font-weight: 300;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+
+.price_description {
+  padding: 1em 0;
+}
+
+.price_features {
+  border-top: 1px solid var(--secondarycolor);
+  border-bottom: 1px solid var(--secondarycolor);
+  padding: 2em 0;
+}
+
+.price_features .text_big {
+  margin-bottom: 0.3em;
+}
+
+.price_bottom .btn {
+  display: inline-block;
+  margin: 2em 0;
+}
+
+/* section_marke */
+
+.section_marke {
+  background-color: #e6e9ee;
+  padding: 5em 0;
+}
+.marke_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* footer */
+footer,
+.footer_section_bottom {
+  color: #aab2ba;
+}
+
+.footer_section_top {
+  background-color: var(--secondarycolor);
+  padding: 3em 0;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo p {
+  max-width: 350px;
+}
+
+.footer_logo img {
+  width: 200px;
+}
+
+/* footer bottom */
+.footer_section_bottom {
+  background-color: var(--thirdtcolor);
+}
+
+.footer_section_top p,
+.footer_section_bottom p {
+  font-size: 18px;
+
+  font-weight: 300;
+}
+
+.adress p {
+  margin-bottom: 1em;
+}
+
+.impressum ul {
+  list-style: none;
+}
+.impressum ul li a {
+  color: #a0a9b1;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.email_link {
+  color: #a0a9b1;
+  text-decoration: underline;
+}
+
+.adress_title {
+  color: #fff;
+  font-weight: 500 !important;
+}
+/* bottom */
+.bottom_wrapper {
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.go_up {
+  font-size: 1.3em;
+  border: 1px solid #a9b2ba;
+  width: 15px;
+  height: 15px;
+  border-radius: 51px;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 300ms all;
+}
+
+.go_up:hover {
+  background-color: var(--primarycolor);
+  border-color: var(--primarycolor);
+  transition: 300ms all;
+}
+
+.follow a {
+  color: #a0a9b1;
+}
+
+.follow a {
+  margin-left: 1em;
+}
+
+.follow :first-child :hover {
+  color: #1877f2;
+}
+.follow :nth-child(2) :hover {
+  color: #c330a1;
+}
+.follow :nth-child(3) :hover {
+  color: #ff0000;
+}
